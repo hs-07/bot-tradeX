@@ -6,6 +6,7 @@ import {
   Section3,
   Section4,
   Section5,
+  Section6,
 } from "../components";
 
 const Landing = () => {
@@ -18,6 +19,9 @@ const Landing = () => {
       <Section4 />
       <Underline />
       <Section5 />
+      <Underline />
+      <Section6 />
+      <Underline />
     </div>
   );
 };
