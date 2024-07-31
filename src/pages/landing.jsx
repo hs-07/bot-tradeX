@@ -5,6 +5,7 @@ import {
   Underline,
   Section3,
   Section4,
+  Section5,
 } from "../components";
 
 const Landing = () => {
@@ -15,6 +16,8 @@ const Landing = () => {
       <Underline />
       <Section3 />
       <Section4 />
+      <Underline />
+      <Section5 />
     </div>
   );
 };
