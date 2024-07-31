@@ -7,6 +7,8 @@ import {
   Section4,
   Section5,
   Section6,
+  Section7,
+  Section9,
 } from "../components";
 
 const Landing = () => {
@@ -22,6 +24,9 @@ const Landing = () => {
       <Underline />
       <Section6 />
       <Underline />
+      <Section7 />
+      <Underline />
+      <Section9 />
     </div>
   );
 };
