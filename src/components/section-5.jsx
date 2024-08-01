@@ -2,22 +2,22 @@ import React from "react";
 
 const Section5 = () => {
   return (
-    <div className="px-20 ">
-      <div className="flex w-full border-x-2 border-borderColor flex-col py-20 px-6">
-        <div className="flex w-full pb-12 gap-6 items-center">
-          <div className="w-1/2 h-full">
+    <div className="px-4 md:px-20 ">
+      <div className="flex w-full border-x-2 border-borderColor flex-col py-20 px-4 md:px-6">
+        <div className="flex md:flex-row flex-col w-full pb-12 gap-6 items-center">
+          <div className="w-full md:w-1/2 h-full">
             <img
               src="/images/hero-5.svg"
               alt="advamve tech"
               className="w-full h-full"
             />
           </div>
-          <div className="w-1/2">
-            <span className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full py-6 leading-[1.2]">
+          <div className="w-full md:w-1/2">
+            <span className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full pb-6 md:pb-12 leading-[1.2]">
               Advanced Technology
             </span>
 
-            <p className="text-[30px] text-light-gray leading-[1.2] text-start">
+            <p className="text-[18px] md:text-[30px] text-light-gray md:leading-[1.2] text-start">
               Harness the power of cutting-edge technology with our proprietary
               trading Algorithm. Our robust infrastructure and sophisticated
               algorithms ensure seamless execution and unparalleled performance
@@ -27,8 +27,8 @@ const Section5 = () => {
         </div>
 
         <div className="w-full flex flex-col gap-6">
-          <div className="flex gap-6">
-            <div className="w-[30%] bg-card-background rounded-2xl px-4 py-8 flex flex-col gap-4">
+          <div className="flex lg:flex-row flex-col gap-4 md:gap-6">
+            <div className="w-full lg:w-[30%] bg-card-background rounded-2xl px-4 py-8 flex flex-col gap-4">
               <span className="text-[36px] text-white font-[600] leading-[1.2]">
                 In-Depth Market Analysis
               </span>
@@ -37,7 +37,7 @@ const Section5 = () => {
                 trading decisions
               </p>
             </div>
-            <div className="w-[40%] bg-card-background rounded-2xl px-4 py-8 flex flex-col gap-4">
+            <div className="w-full lg:w-[40%] bg-card-background rounded-2xl px-4 py-8 flex flex-col gap-4">
               <span className="text-[36px] text-white font-[600] leading-[1.2]">
                 Customisable Strategies 
               </span>
@@ -46,7 +46,7 @@ const Section5 = () => {
                 tolerance and trading objectives
               </p>
             </div>
-            <div className="w-[30%] bg-card-background rounded-2xl px-4 py-8 flex flex-col gap-4">
+            <div className="w-full lg:w-[30%] bg-card-background rounded-2xl px-4 py-8 flex flex-col gap-4">
               <span className="text-[36px] text-white font-[600] leading-[1.2]">
                 Enhanced Signal Identification
               </span>
@@ -57,8 +57,8 @@ const Section5 = () => {
             </div>
           </div>
 
-          <div className="flex gap-6">
-            <div className="w-[40%] bg-card-background rounded-2xl px-4 py-16 flex flex-col gap-4">
+          <div className="flex lg:flex-row flex-col gap-4 md:gap-6">
+            <div className="w-full lg:w-[40%] bg-card-background rounded-2xl px-4 py-16 flex flex-col gap-4">
               <span className="text-[36px] text-white font-[600] leading-[1.2]">
                 Adaptive Algorithms
               </span>
@@ -67,7 +67,7 @@ const Section5 = () => {
                 changing market conditions.
               </p>
             </div>
-            <div className="w-[60%] bg-card-background rounded-2xl px-4 py-16 flex flex-col gap-4">
+            <div className="w-full lg:w-[60%] bg-card-background rounded-2xl px-4 py-16 flex flex-col gap-4">
               <span className="text-[36px] text-white font-[600] leading-[1.2]">
                 Robust Risk Management
               </span>
