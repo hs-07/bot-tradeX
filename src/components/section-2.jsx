@@ -62,11 +62,13 @@ const Section2 = () => {
               </button>
             </div>
           </div>
-          <div className="w-full p-8 ">
-            <div className="w-full bg-card-background rounded-xl flex">
-              <div className="p-8 flex flex-col justify-between">
-                <span className="text-[40px]">Expert Advisors (EAs)</span>
-                <p className="text-[32px] text-light-gray leading-[1.2]">
+          <div className="w-full p-4 md:p-8 ">
+            <div className="w-full bg-card-background rounded-xl flex md:flex-row flex-col">
+              <div className="p-8 flex flex-col justify-between md:order-1 order-2">
+                <span className="text-[36px] md:text-[40px]">
+                  Expert Advisors (EAs)
+                </span>
+                <p className="text-[18px] md:text-[32px] text-light-gray leading-[1.2] pb-4">
                   Automate your trades with sophisticated, rule-based systems
                   designed for maximum efficiency.
                 </p>
@@ -74,11 +76,16 @@ const Section2 = () => {
                   Contact us
                 </button>
               </div>
-              <div className="w-full h-full">
+              <div className="w-full md:order-2 order-1">
                 <img
                   src="/images/hero-2.svg"
                   alt="hero"
-                  className="rounded-r-xl h-full w-full"
+                  className="hidden md:flex rounded-tl-xl md:rounded-tl-none rounded-tr-xl md:rounded-br-xl h-full w-full object-cover"
+                />
+                <img
+                  src="/images/mob-hero-2.svg"
+                  alt="hero"
+                  className="md:hidden flex rounded-tl-xl md:rounded-tl-none rounded-tr-xl md:rounded-br-xl h-full w-full object-cover"
                 />
               </div>
             </div>
