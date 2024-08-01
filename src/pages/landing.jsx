@@ -8,6 +8,7 @@ import {
   Section5,
   Section6,
   Section7,
+  Section8,
   Section9,
 } from "../components";
 
@@ -25,6 +26,8 @@ const Landing = () => {
       <Section6 />
       <Underline />
       <Section7 />
+      <Underline />
+      <Section8 />
       <Underline />
       <Section9 />
     </div>
