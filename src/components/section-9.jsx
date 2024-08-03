@@ -3,7 +3,7 @@ import React from "react";
 const Section9 = () => {
   return (
     <div className="px-4 md:px-20 bg-background h-full md:mb-24">
-      <div className=" h-[80vh] md:min-h-screen relative w-full border-x-2 border-borderColor h-full bg-background">
+      <div className=" min-h-[80vh] md:min-h-screen relative w-full border-x-2 border-borderColor h-full bg-background">
         <div className="absolute bottom-0 md:top-20 right-0">
           <img
             src={"/images/img-4.png"}
