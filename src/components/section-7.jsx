@@ -1,25 +1,27 @@
 import React from "react";
 import { packages } from "../utils/constants";
+import Carousel7 from "./carousel7";
 
 const Section7 = () => {
   return (
-    <div className="px-20 ">
-      <div className="flex flex-col w-full border-x-2 border-borderColor py-20 items-center px-8">
+    <div className="px-4 md:px-20 overflow-x-hidden">
+      <div className="flex flex-col w-full border-x-2 border-borderColor py-20 items-center px-8 overflow-x-auto">
         <div className="pb-6">
-          <span className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center leading-[1.2]">
+          <span className="font-[600] text-[36px] md:text-[86px] text-center text-white flex flex-col w-full items-center leading-[1.2] pb-4">
             BotTradeX EA Packages
           </span>
-          <p className="text-[30px] text-light-gray leading-[1.2] text-center pb-20">
+          <p className="text-[18px] md:text-[30px] text-light-gray leading-[1.2] text-center pb-20">
             Empower Your Trading with Cutting-Edge Expert Advisors
           </p>
         </div>
 
-        <div className="grid grid-cols-4 gap-6">
+        <div className="hidden md:grid grid-cols-4 gap-6">
           {packages.map((item, index) => (
             <div
               className={`p-4 flex flex-col rounded-lg text-white justify-between ${
                 index === 0 ? "bg-primary" : "bg-card-background"
               }`}
+              key={index}
             >
               {" "}
               <div className="flex flex-col gap-2">
@@ -34,7 +36,10 @@ const Section7 = () => {
 
                 <div className="flex flex-col gap-4">
                   {item.features.map((feature) => (
-                    <p className="text-white text-base leading-[1.2]">
+                    <p
+                      className="text-white text-base leading-[1.2]"
+                      key={index}
+                    >
                       {feature}
                     </p>
                   ))}
@@ -58,6 +63,9 @@ const Section7 = () => {
               </button>
             </div>
           ))}
+        </div>
+        <div className="flex md:hidden">
+          <Carousel7 />
         </div>
       </div>
     </div>
