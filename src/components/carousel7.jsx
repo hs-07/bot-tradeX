@@ -124,7 +124,7 @@ const Carousel = () => {
           <div
             key={index}
             className={`h-4 w-4 mx-1 rounded-full ${
-              index === currentIndex ? "bg-black" : "bg-gray-300"
+              index === currentIndex ? "bg-white" : "bg-[#4A4A4A]"
             }`}
           />
         ))}

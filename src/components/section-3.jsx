@@ -38,7 +38,7 @@ const Section3 = () => {
               TDesigned to assess trading proficiency swiftly, this EA
               facilitates the successful completion of proprietary firm
               challenges, enabling traders to secure funded accounts within as
-              little as one day. 
+              little as one day.
             </p>
             <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
               Learn more
