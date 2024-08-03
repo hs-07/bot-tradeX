@@ -29,7 +29,7 @@ const Section2 = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-8 gap-4 md:gap-8">
             <div className="bg-card-background flex flex-col p-8 rounded-2xl gap-8 justify-between">
               <img
-                src="/images/ai.svg"
+                src="/images/AI.svg"
                 alt="ai"
                 className="w-1/2 md:w-[200px]"
               />
