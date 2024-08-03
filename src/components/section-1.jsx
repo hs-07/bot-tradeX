@@ -14,7 +14,7 @@ const Section1 = () => {
         <span className="text-[#FFFFFF] text-[36px] md:text-[80px] leading-[1] text-center font-[600] px-4">
           The Future Of Algorithmic Trading Today
         </span>
-        <span className="text-white text-[18px] md:text-[30px] w-full lg:w-3/5 text-center leading-[1] px-4">
+        <span className="text-light-gray md:text-white text-[18px] md:text-[30px] w-full lg:w-3/5 text-center leading-[24px] md:leading-[1] px-4">
           Empower your trading with cutting-edge algorithms and advanced
           technology.
         </span>
