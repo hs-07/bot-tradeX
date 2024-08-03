@@ -32,7 +32,7 @@ const Section5 = () => {
               <span className="text-[36px] text-white font-[600] leading-[1.2]">
                 In-Depth Market Analysis
               </span>
-              <p className="text-[24px] text-light-gray">
+              <p className="text-[18px] md:text-[24px] text-light-gray">
                 Leverage extensive research and analysis to inform data-driven
                 trading decisions
               </p>
@@ -41,7 +41,7 @@ const Section5 = () => {
               <span className="text-[36px] text-white font-[600] leading-[1.2]">
                 Customisable Strategies 
               </span>
-              <p className="text-[24px] text-light-gray">
+              <p className="text-[18px] md:text-[24px] text-light-gray">
                 Tailor your EA's parameters to align with your unique risk
                 tolerance and trading objectives
               </p>
@@ -50,7 +50,7 @@ const Section5 = () => {
               <span className="text-[36px] text-white font-[600] leading-[1.2]">
                 Enhanced Signal Identification
               </span>
-              <p className="text-[24px] text-light-gray">
+              <p className="text-[18px] md:text-[24px] text-light-gray">
                 Focus on high-probability trading opportunities by filtering out
                 market noise
               </p>
@@ -62,7 +62,7 @@ const Section5 = () => {
               <span className="text-[36px] text-white font-[600] leading-[1.2]">
                 Adaptive Algorithms
               </span>
-              <p className="text-[24px] text-light-gray">
+              <p className="text-[18px] md:text-[24px] text-light-gray">
                 Benefit from constantly evolving algorithms that adapt to
                 changing market conditions.
               </p>
@@ -71,7 +71,7 @@ const Section5 = () => {
               <span className="text-[36px] text-white font-[600] leading-[1.2]">
                 Robust Risk Management
               </span>
-              <p className="text-[24px] text-light-gray">
+              <p className="text-[18px] md:text-[24px] text-light-gray">
                 Safeguard your capital with customisable risk management tools
                 designed for your specific assets and trading style.
               </p>

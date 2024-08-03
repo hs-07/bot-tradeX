@@ -3,8 +3,8 @@ import React from "react";
 const Section9 = () => {
   return (
     <div className="px-4 md:px-20 bg-background h-full md:mb-24">
-      <div className=" md:min-h-screen relative w-full border-x-2 border-borderColor h-full bg-background">
-        <div className="hidden md:block absolute top-20 right-0">
+      <div className=" h-[80vh] md:min-h-screen relative w-full border-x-2 border-borderColor h-full bg-background">
+        <div className="absolute bottom-0 md:top-20 right-0">
           <img
             src={"/images/img-4.png"}
             alt="background"
@@ -20,7 +20,7 @@ const Section9 = () => {
             Ready to take your trading to the next level? Sign up for BotTradeX
             today and enjoy the benefit of automated trading
           </span>
-          <button className="text-[#EBEFFF] bg-primary border-none text-[18px] py-3 px-8 rounded-xl transition-all ease-in-out w-fit hidden md:block">
+          <button className="text-[#EBEFFF] bg-primary border-none text-[18px] py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
             Get Started for Free
           </button>
         </div>

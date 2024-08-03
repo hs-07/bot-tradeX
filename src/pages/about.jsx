@@ -5,42 +5,23 @@ const About = () => {
     <div className="h-screen bg-background flex flex-col gap-8 p-4 md:p-12 landing">
       <div className="flex gap-4 flex-col">
         <h2 className="text-white text-[24px] font-bold">About Us</h2>
-        <span className="text-white">
+        <span className="text-light-gray">
           Welcome to BotTradeX!
           <br />
           <br />
-          At Remesa, we bridge distances and connect lives with reliable
-          remittance services. Our mission is to ensure secure and efficient
-          money transfers to even the most remote locations in underserved
-          countries, fostering financial inclusion and economic growth.
-          <br />
-          <br />
-          <b> Our Commitment</b>
-          <br /> Reliability: Trust us to deliver your money safely and on time.
-          Accessibility: Reaching the most isolated regions to ensure no one is
-          left behind.
-          <br />
-          Affordability: Competitive rates to maximize the value of every
-          transfer.
-          <br />
-          Customer Focus: Exceptional service to address your needs and
-          concerns. Why Choose Remesa? Global Reach: Extensive network covering
-          multiple countries.
-          <br />
-          Innovative Technology: Fast, secure, and reliable transfers.
-          <br />
-          Community Focus: Supporting local economies and promoting financial
-          stability. Join Remesa and experience a remittance service that
-          connects hearts and transforms lives.
-          <br />
-          <br /> <b> Sign up </b>
-          <br />
-          <br /> <b> Contact Us:</b>
-          <br /> <u> Email: </u> support@remesa.money
-          <br /> <u> Follow Us:</u> Facebook | Twitter | LinkedIn
-          <br />
-          <br />
-          <b> Remesa: Connecting Hearts, Transferring Wealth.</b>
+          BotTradeX is a Queensland-based provider of cutting-edge trading
+          automation solutions. We specialize in developing high-performance
+          Expert Advisors (EAs) and advanced algorithmic strategies designed to
+          optimize trading performance in the Forex and indices markets. Our
+          team of seasoned financial professionals and technologists is
+          committed to empowering traders of all levels with the tools and
+          knowledge necessary to navigate the complexities of modern markets. We
+          offer comprehensive support and educational resources, tailored to
+          enhance your trading knowledge and skills, ultimately maximizing your
+          potential for success. Partner with BotTradeX and leverage our
+          expertise to gain a competitive edge in the global markets. Experience
+          the transformative power of intelligent automation and unlock new
+          possibilities for financial growth.
         </span>
       </div>
     </div>
