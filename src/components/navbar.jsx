@@ -1,12 +1,15 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const Navlinks = [
     { title: "Home", path: "/" },
     { title: "About Us", path: "/about" },
-    { title: "Contact Us", path: "/contact" },
+    { title: "Services", path: "/y" },
+    { title: "Packages", path: "/u" },
+    { title: "Results", path: "/i" },
+    { title: "Scalp Club", path: "/o" },
   ];
 
   return (
@@ -33,14 +36,11 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="">
-            <a
-              href="https://ocp.mtbs.co/Account/Login?ReturnUrl=%2f"
-              className=""
-            >
+            <Link href="" className="">
               <button className="text-white bg-primary border-none text-[16px] h-[50px] w-32 rounded-xl transition-all ease-in-out">
-                Sign Up
+                Contact us
               </button>
-            </a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -82,14 +82,11 @@ const Navbar = () => {
                   {link.title}
                 </NavLink>
               ))}
-              <a
-                href="https://ocp.mtbs.co/Account/Login?ReturnUrl=%2f"
-                className=""
-              >
+              <Link href="" className="">
                 <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out">
-                  Sign Up
+                  Contact us
                 </button>
-              </a>
+              </Link>
             </ul>
           </div>
         )}

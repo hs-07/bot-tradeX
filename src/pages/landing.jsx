@@ -31,6 +31,9 @@ const Landing = () => {
       <Section8 />
       <Underline />
       <Section9 />
+      <div className="w-full flex md:hidden">
+        <Underline />
+      </div>
       <Footer />
     </div>
   );
