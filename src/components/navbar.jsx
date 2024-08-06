@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +11,15 @@ const Navbar = () => {
     { title: "Packages", path: "#packages" },
     { title: "Results", path: "#results" },
     { title: "Scalp Club", path: "#" },
+  ];
+
+  const mobNavlinks = [
+    { title: "Home", path: "/" },
+    { title: "Scalp Club", path: "/s" },
+    { title: "About us", path: "/about" },
+    { title: "Contact us", path: "/c" },
+    { title: "Privacy Policy", path: "/privacyPolicy" },
+    { title: "Terms and conditions", path: "/termsAndConditions" },
   ];
 
   return (
@@ -66,24 +75,24 @@ const Navbar = () => {
         {isOpen && (
           <div className="w-full h-[100vh] bg-background z-[99] absolute">
             <ul className="flex flex-col justify-start items-center h-full space-y-6 py-12 font-semibold">
-              {Navlinks.map((link, index) => (
-                <a
-                  href={link.path}
+              {mobNavlinks.map((link, index) => (
+                <NavLink
+                  exact
+                  to={link.path}
                   key={index}
-                  className={`cursor-pointer font-[400] text-[16px] ${
-                    activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
-                  }`}
-                  onClick={() => {
-                    setActiveLink(link.path);
-                    setIsOpen(false);
-                  }}
+                  className={({ isActive }) =>
+                    `cursor-pointer font-[400] text-[16px] ${
+                      isActive ? "text-white" : "text-[#4F4F4F]"
+                    } `
+                  }
+                  onClick={() => setIsOpen((prev) => !prev)}
                 >
                   {link.title}
-                </a>
+                </NavLink>
               ))}
               <Link to="" className="">
                 <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out">
-                  Contact us
+                  Get Started
                 </button>
               </Link>
             </ul>

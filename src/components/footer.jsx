@@ -6,7 +6,7 @@ const footer = () => {
     { title: "Home", link: "/" },
     { title: "About Us", link: "/about" },
     { title: "Privacy Policy", link: "/privacyPolicy" },
-    { title: "Terms and Conditions", link: "termsAndConditions" },
+    { title: "Terms and Conditions", link: "/termsAndConditions" },
   ];
   const usefulLinks = [
     { title: "Pricing", link: "#packages" },
