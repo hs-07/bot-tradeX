@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("/"); // Set default active link to Home
+
   const Navlinks = [
     { title: "Home", path: "/" },
     { title: "Services", path: "#services" },
@@ -13,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="w-full bg-background top-0 sticky z-[9999] border-b border-borderColor">
-      <nav className="hidden lg:flex w-full h-[4rem] px-20 py-2 items-center justify-between ">
+      <nav className="hidden lg:flex w-full h-[4rem] px-20 py-2 items-center justify-between">
         <div className="h-full">
           <img src="/images/logo.png" alt="remesa" className="h-full py-2" />
         </div>
@@ -24,15 +26,16 @@ const Navbar = () => {
                 href={link.path}
                 key={index}
                 className={`cursor-pointer font-[400] text-[16px] ${
-                  index === 0 ? "text-white" : "text-[#4F4F4F]"
+                  activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
                 }`}
+                onClick={() => setActiveLink(link.path)}
               >
                 {link.title}
               </a>
             ))}
           </ul>
           <div className="">
-            <Link href="" className="">
+            <Link to="" className="">
               <button className="text-white bg-primary border-none text-[16px] h-[50px] w-32 rounded-xl transition-all ease-in-out">
                 Contact us
               </button>
@@ -68,14 +71,17 @@ const Navbar = () => {
                   href={link.path}
                   key={index}
                   className={`cursor-pointer font-[400] text-[16px] ${
-                    index === 0 ? "text-white" : "text-[#4F4F4F]"
+                    activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
                   }`}
-                  onClick={() => setIsOpen((prev) => !prev)}
+                  onClick={() => {
+                    setActiveLink(link.path);
+                    setIsOpen(false);
+                  }}
                 >
                   {link.title}
                 </a>
               ))}
-              <Link href="" className="">
+              <Link to="" className="">
                 <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out">
                   Contact us
                 </button>
