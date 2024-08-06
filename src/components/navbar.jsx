@@ -12,7 +12,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full bg-background">
+    <div className="w-full bg-background top-0 sticky z-[9999] border-b border-borderColor">
       <nav className="hidden lg:flex w-full h-[4rem] px-20 py-2 items-center justify-between ">
         <div className="h-full">
           <img src="/images/logo.png" alt="remesa" className="h-full py-2" />
