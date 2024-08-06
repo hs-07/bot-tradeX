@@ -2,7 +2,7 @@ import React from "react";
 
 const Section3 = () => {
   return (
-    <div className="px-4 md:px-20 ">
+    <div className="px-4 md:px-20 " id="services">
       <div className="flex flex-col w-full border-x-2 border-borderColor py-20 items-center">
         <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center py-12 ">
           <span className="md:-mb-10 text-center">

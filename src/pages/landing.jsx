@@ -1,5 +1,6 @@
 import React from "react";
 import {
+  Navbar,
   Section1,
   Section2,
   Underline,
@@ -15,20 +16,21 @@ import {
 
 const Landing = () => {
   return (
-    <div className="bg-background">
-      <Section1 />
-      <Section2 />
+    <div className="bg-background smooth-scroll w-full">
+      <Navbar />
+      <Section1 id="section1" />
+      <Section2 id="section2" />
       <Underline />
-      <Section3 />
-      <Section4 />
+      <Section3 id="section3" />
+      <Section4 id="section4" />
       <Underline />
-      <Section5 />
+      <Section5 id="section5" />
       <Underline />
-      <Section6 />
+      <Section6 id="section6" />
       <Underline />
-      <Section7 />
+      <Section7 id="section7" />
       <Underline />
-      <Section8 />
+      <Section8 id="section8" />
       <Underline />
       <Section9 />
       <div className="w-full flex md:hidden">

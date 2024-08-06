@@ -4,7 +4,7 @@ import Carousel7 from "./carousel7";
 
 const Section7 = () => {
   return (
-    <div className="px-4 md:px-20 overflow-x-hidden">
+    <div className="px-4 md:px-20 overflow-x-hidden" id="packages">
       <div className="flex flex-col w-full border-x-2 border-borderColor py-20 items-center px-8 overflow-x-auto">
         <div className="pb-6">
           <span className="font-[600] text-[36px] md:text-[86px] text-center text-white flex flex-col w-full items-center leading-[1.2] pb-4">
@@ -50,8 +50,11 @@ const Section7 = () => {
                 </span>
 
                 <div className="flex flex-col gap-4">
-                  {item.benefits.map((feature) => (
-                    <p className="text-white text-base leading-[1.2] flex gap-2 items-start">
+                  {item.benefits.map((feature, index) => (
+                    <p
+                      className="text-white text-base leading-[1.2] flex gap-2 items-start"
+                      key={index}
+                    >
                       <img src="/images/tick.svg" alt="tick" className="" />
                       {feature}
                     </p>
@@ -59,7 +62,7 @@ const Section7 = () => {
                 </div>
               </div>
               <button className="bg-primary text-black text-[20px] py-2 rounded-lg mt-4 bg-white mt-32">
-                {index === 0 ? "14 Day Trial" : "Upgrade"}
+                {index === 0 ? "14 Day Trial" : "Contact Us"}
               </button>
             </div>
           ))}

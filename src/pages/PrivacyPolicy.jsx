@@ -1,8 +1,17 @@
 import React from "react";
+import { FaChevronLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Privacy = () => {
+  const navigate = useNavigate();
   return (
     <div className="h-full bg-background flex flex-col gap-8 p-4 md:p-16 landing">
+      <span
+        className="text-black bg-white w-10 h-10 rounded-md flex items-center justify-center cursor-pointer"
+        onClick={() => navigate(-1)}
+      >
+        <FaChevronLeft />
+      </span>
       <div className="flex gap-4 flex-col">
         <h2 className="text-white text-[24px] font-bold">Privacy policy</h2>
         <span className="text-white">
