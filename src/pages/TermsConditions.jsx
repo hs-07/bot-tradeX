@@ -1,12 +1,20 @@
 import React from "react";
+import { FaChevronLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const TermsAndConditions = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="h-full bg-background flex flex-col gap-8 p-4 md:p-16 landing">
-      <h2 className="text-white text-[24px] font-bold">Terms & Conditions</h2>
-
+      <span
+        className="text-black bg-white w-10 h-10 rounded-md flex items-center justify-center cursor-pointer"
+        onClick={() => navigate(-1)}
+      >
+        <FaChevronLeft />
+      </span>
+      ;<h2 className="text-white text-[24px] font-bold">Terms & Conditions</h2>
       <h2 className="text-white text-xl">BotTradeX Terms and Conditions</h2>
-
       <div className="flex gap-4 flex-col">
         <h2 className="text-white text-xl">1. Acceptance of Terms:</h2>
         <span className="text-white">

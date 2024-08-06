@@ -9,9 +9,9 @@ const footer = () => {
     { title: "Terms and Conditions", link: "termsAndConditions" },
   ];
   const usefulLinks = [
-    { title: "Pricing", link: "/" },
-    { title: "Blog", link: "/" },
-    { title: "Contact Us", link: "/contact" },
+    { title: "Pricing", link: "#packages" },
+    { title: "Blog", link: "#" },
+    { title: "Contact Us", link: "#" },
   ];
   return (
     <>
@@ -50,18 +50,26 @@ const footer = () => {
           </div>
           <div className="gap-4 flex flex-col text-white">
             <h1 className="text-[40px] font-[600] ">Legal</h1>
-            {quickLinks.map((link) => (
-              <Link to={link.link} className="text-[18px] font-[400]">
+            {quickLinks.map((link, index) => (
+              <Link
+                to={link.link}
+                key={index}
+                className="text-[18px] font-[400] text-light-gray"
+              >
                 {link.title}
               </Link>
             ))}
           </div>
           <div className="gap-4 flex flex-col text-white">
             <h1 className="text-[40px] font-[600] ">Useful Links</h1>
-            {usefulLinks.map((link) => (
-              <Link to={link.link} className="text-[18px] font-[400] ">
+            {usefulLinks.map((link, index) => (
+              <a
+                href={link.link}
+                key={index}
+                className="text-[18px] font-[400] text-light-gray"
+              >
                 {link.title}
-              </Link>
+              </a>
             ))}
           </div>
           <div className="gap-4 flex flex-col text-white">

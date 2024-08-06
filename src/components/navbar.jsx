@@ -5,11 +5,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const Navlinks = [
     { title: "Home", path: "/" },
-    { title: "About Us", path: "/about" },
-    { title: "Services", path: "/y" },
-    { title: "Packages", path: "/u" },
-    { title: "Results", path: "/i" },
-    { title: "Scalp Club", path: "/o" },
+    { title: "Services", path: "#services" },
+    { title: "Packages", path: "#packages" },
+    { title: "Results", path: "#results" },
+    { title: "Scalp Club", path: "#" },
   ];
 
   return (
@@ -21,18 +20,15 @@ const Navbar = () => {
         <div className="flex items-center gap-6">
           <ul className="flex justify-end space-x-6">
             {Navlinks.map((link, index) => (
-              <NavLink
-                exact
-                to={link.path}
+              <a
+                href={link.path}
                 key={index}
-                className={({ isActive }) =>
-                  `cursor-pointer font-[400] text-[16px] ${
-                    isActive ? "text-white" : "text-[#4F4F4F]"
-                  }`
-                }
+                className={`cursor-pointer font-[400] text-[16px] ${
+                  index === 0 ? "text-white" : "text-[#4F4F4F]"
+                }`}
               >
                 {link.title}
-              </NavLink>
+              </a>
             ))}
           </ul>
           <div className="">
@@ -68,19 +64,16 @@ const Navbar = () => {
           <div className="w-full h-[100vh] bg-background z-[99] absolute">
             <ul className="flex flex-col justify-start items-center h-full space-y-6 py-12 font-semibold">
               {Navlinks.map((link, index) => (
-                <NavLink
-                  exact
-                  to={link.path}
+                <a
+                  href={link.path}
                   key={index}
-                  className={({ isActive }) =>
-                    `cursor-pointer font-[400] text-[16px] ${
-                      isActive ? "text-white" : "text-[#4F4F4F]"
-                    }`
-                  }
+                  className={`cursor-pointer font-[400] text-[16px] ${
+                    index === 0 ? "text-white" : "text-[#4F4F4F]"
+                  }`}
                   onClick={() => setIsOpen((prev) => !prev)}
                 >
                   {link.title}
-                </NavLink>
+                </a>
               ))}
               <Link href="" className="">
                 <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out">
