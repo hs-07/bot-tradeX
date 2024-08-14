@@ -3,14 +3,14 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [activeLink, setActiveLink] = useState("/"); // Set default active link to Home
+  const [activeLink, setActiveLink] = useState("/");
 
   const Navlinks = [
     { title: "Home", path: "/" },
-    { title: "Services", path: "#services" },
-    { title: "Packages", path: "#packages" },
-    { title: "Results", path: "#results" },
-    { title: "Scalp Club", path: "#" },
+    { title: "Services", path: "/#services" },
+    { title: "Packages", path: "/#packages" },
+    { title: "Results", path: "/#results" },
+    { title: "Scalp Club", path: "/scalpClub" },
   ];
 
   const mobNavlinks = [
@@ -30,18 +30,45 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-6">
           <ul className="flex justify-end space-x-6">
-            {Navlinks.map((link, index) => (
-              <a
-                href={link.path}
-                key={index}
-                className={`cursor-pointer font-[400] text-[16px] ${
-                  activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
-                }`}
-                onClick={() => setActiveLink(link.path)}
-              >
-                {link.title}
-              </a>
-            ))}
+            <>
+              {Navlinks.slice(0, 1).map((link, index) => (
+                <NavLink
+                  key={index}
+                  to={link.path}
+                  className={`cursor-pointer font-[400] text-[16px] ${
+                    activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
+                  }`}
+                  onClick={() => setActiveLink(link.path)}
+                >
+                  {link.title}
+                </NavLink>
+              ))}
+              {Navlinks.slice(1, 4).map((link, index) => (
+                <a
+                  href={link.path}
+                  key={index}
+                  className={`cursor-pointer font-[400] text-[16px] ${
+                    activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
+                  }`}
+                  onClick={() => setActiveLink(link.path)}
+                >
+                  {link.title}
+                </a>
+              ))}
+
+              {Navlinks.slice(4).map((link, index) => (
+                <NavLink
+                  key={index}
+                  to={link.path}
+                  className={`cursor-pointer font-[400] text-[16px] ${
+                    activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
+                  }`}
+                  onClick={() => setActiveLink(link.path)}
+                >
+                  {link.title}
+                </NavLink>
+              ))}
+            </>
           </ul>
           <div className="">
             <Link to="" className="">
