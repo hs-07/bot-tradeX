@@ -8,6 +8,8 @@ const Section1 = () => {
           src={"/images/hero.png"}
           alt="background"
           className="h-full w-full opacity-[0.8] h-[calc(100dvh-4rem)] object-cover w-screen"
+          sizes="50"
+          quality={50}
         />
       </div>
       <div className="z-[9] relative flex flex-col h-[calc(100dvh-4rem)] justify-center items-center gap-[32px] w-full">

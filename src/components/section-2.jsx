@@ -44,6 +44,7 @@ const Section2 = () => {
                 Learn more
               </button>
             </div>
+
             <div className="bg-card-background flex flex-col p-8 rounded-2xl gap-8 justify-between">
               <img
                 src="/images/alarm.svg"
