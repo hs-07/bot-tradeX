@@ -15,7 +15,7 @@ const Navbar = () => {
 
   const mobNavlinks = [
     { title: "Home", path: "/" },
-    { title: "Scalp Club", path: "/s" },
+    { title: "Scalp Club", path: "/scalpClub" },
     { title: "About us", path: "/about" },
     { title: "Contact us", path: "/c" },
     { title: "Privacy Policy", path: "/privacyPolicy" },
