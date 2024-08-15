@@ -62,3 +62,35 @@ export const packages = [
     ],
   },
 ];
+export const customers = [
+  {
+    name: "Tochi D",
+    description:
+      "BotTradeX EAs have made trading so much easier for me. As a beginner, I was initially  intimidated, but the EA are user-friendly and the results are impressive. I'm really happy  with my decision to try them.",
+  },
+  {
+    name: " Sarah L",
+    description:
+      "I've been trading for years, and BotTradeX's EAs have taken my strategies to the next  level. The algorithms are sophisticated, and the risk management features are solid. My  portfolio performance has improved significantly since using them.",
+  },
+  {
+    name: "Daniel K",
+    description:
+      "I was skeptical at first, but the 14-day risk-free trial convinced me. I got to experience  the power of their EAs firsthand, and the results were undeniable. Now I'm a subscriber,  and I'm already seeing the benefits.",
+  },
+  {
+    name: "Mia B",
+    description:
+      "BotTradeX EAs are decent, but they're not a magic bullet. I've had some wins and some  losses, which is expected in trading. I just think they're a good option for traders who  want to automate some of their strategies.",
+  },
+  {
+    name: "Aisha H",
+    description:
+      "The BotTradeX team goes above and beyond for their customers. They are always  available to answer my questions and help me optimize my EAs. Their support is  top-notch, and I feel confident knowing they have my back",
+  },
+  {
+    name: "Alexander P",
+    description:
+      "BotTradeX offers a wide range of EAs to suit different trading styles. I've been using  their momentum algorithms on TradingView, and they have consistently delivered solid  results. I'm impressed with their commitment to innovation and customer success.",
+  },
+];

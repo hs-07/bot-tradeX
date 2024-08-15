@@ -1,5 +1,7 @@
 import React from "react";
 import Carousel8 from "./carousel8";
+import Carousel9 from "./carousel9";
+import { customers } from "../utils/constants";
 
 const section8 = () => {
   return (
@@ -14,23 +16,8 @@ const section8 = () => {
           </span>
         </div>
 
-        <div className="hidden md:grid grid-cols-4 gap-6">
-          {Array.from({ length: 4 }).map((_, index) => (
-            <div
-              className="bg-card-background rounded-lg p-6 gap-2 flex flex-col"
-              key={index}
-            >
-              <span className="text-light-gray">
-                Bottradex has transformed the way I trade. The AI insights are
-                incredibly accurate, and the platform is intuitive and easy to
-                use.
-              </span>
-              <div className="flex gap-2 items-center">
-                <img src="/images/profile.svg" alt="profile" className="" />
-                <span className="text-white">Fennan Bell</span>
-              </div>
-            </div>
-          ))}
+        <div className="hidden md:block w-full overflow-x-hidden">
+          <Carousel9 />
         </div>
         <div className="flex md:hidden">
           <Carousel8 />
