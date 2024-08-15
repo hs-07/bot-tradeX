@@ -13,29 +13,29 @@ const Section = () => {
   return (
     <div className="px-4 md:px-20">
       <div className="py-4 px-4 md:px-12 md:py-20 border-borderColor border-x flex flex-col items-center">
-        <span className="text-[36px] md:text-[80px] md:leading-[80px] font-[600] text-white text-center w-full pb-10">
+        <span className="text-[36px] md:text-[80px] leading-[36px] md:leading-[80px] font-[600] text-white text-center w-full pb-4 pt-10 md:pt-0 md:pb-10">
           Ready to Catch Those Profits?
         </span>
-        <span className="text-light-gray text-[18px] pb-12">
+        <span className="text-light-gray text-[18px] py-10 text-center">
           Become a member of the BotTradeX Scalp Club and unlock the full
           potential of your scalping journey
         </span>
         <div className="bg-card-background flex w-full md:flex-row flex-col rounded-[20px] md:rounded-[50px]">
-          <div className="w-[45%] pr-4 rounded-l-[50px]">
+          <div className="w-full md:w-[45%] md:pr-4 rounded-l-[50px]">
             <img
               src="/scalpClub/hero-3.svg"
               alt=""
-              className="hidden md:flex rounded-l-[50px] h-full object-cover"
+              className="hidden md:flex rounded-l-[50px] h-full object-cover "
             />
             <img
               src="/scalpClub/mob-hero-3.svg"
               alt=""
-              className="md:hidden flex rounded-t-[20px]"
+              className="md:hidden flex rounded-t-[20px] w-full h-full"
             />
           </div>
-          <div className="w-[55%] p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="w-full md:w-[55%] p-4 md:p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="w-full flex flex-col gap-4">
-              <span className="text-light-gray font-[700] w-48 text-[18px]">
+              <span className="text-light-gray md:font-[700] md:w-48 text-[18px]">
                 BotTradeX Scalp Club Membership Benefits
               </span>
               {points.map((point, index) => (
@@ -52,7 +52,7 @@ const Section = () => {
                   AUD $999
                 </span>
                 <p className="text-light-gray">Monthly Subscription</p>
-                <span className="text-[64px] leading-[70px] font-[400] text-light-gray">
+                <span className="text-[36px] leading-[40px] md:text-[64px] md:leading-[70px] font-[400] text-light-gray">
                   Start your free 30 Day Trial
                 </span>
               </div>
