@@ -5,6 +5,7 @@ import {
   Section3,
   Section4,
   Section5,
+  Section6,
 } from "../components/ScalpClub";
 import { Footer, Navbar, Underline } from "../components";
 
@@ -20,6 +21,8 @@ const ScalpClub = () => {
       <Section4 id="section4" />
       <Underline />
       <Section5 id="section5" />
+      <Underline />
+      <Section6 id="section6" />
       <Underline />
       <Footer />
     </div>

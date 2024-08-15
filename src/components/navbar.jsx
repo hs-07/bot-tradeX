@@ -60,10 +60,10 @@ const Navbar = () => {
                 <NavLink
                   key={index}
                   to={link.path}
+                  onClick={() => setActiveLink(link.path)}
                   className={`cursor-pointer font-[400] text-[16px] ${
                     activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
                   }`}
-                  onClick={() => setActiveLink(link.path)}
                 >
                   {link.title}
                 </NavLink>
