@@ -4,11 +4,11 @@ const Section = () => {
   return (
     <div className="px-4 md:px-20">
       <div className="py-4 px-4 md:px-12 md:py-20 border-borderColor border-x flex flex-col items-center">
-        <span className="text-[80px] leading-[80px] font-[600] text-white text-center w-full pb-8">
+        <span className="text-[36px] md:text-[80px] leading-[80px] font-[600] text-white text-center w-full md:pb-8">
           Here's the deal
         </span>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 pb-10">
-          <div className="bg-card-background flex flex-col p-8 rounded-2xl gap-8 justify-between">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 pt-4 md:pt-12 pb-10">
+          <div className="bg-card-background flex flex-col p-4 md:p-8 rounded-2xl gap-8 justify-between">
             <img src="/scalpClub/graph.svg" alt="graph" className="w-1/2" />
             <span className="text-[36px] leading-[36px] md:text-[36px] text-white">
               Live Signals, Delivered Hot
@@ -20,7 +20,7 @@ const Section = () => {
               charts!
             </p>
           </div>
-          <div className="bg-card-background flex flex-col p-8 rounded-2xl gap-8 justify-between">
+          <div className="bg-card-background flex flex-col p-4 md:p-8 rounded-2xl gap-8 justify-between">
             <img src="/scalpClub/target.svg" alt="target" className="w-1/2" />
             <span className="text-[36px] leading-[36px] md:text-[36px] text-white">
               Focus on the Action, Not the Analysis
@@ -31,7 +31,7 @@ const Section = () => {
               on making those winning trades.
             </p>
           </div>
-          <div className="bg-card-background flex flex-col p-8 rounded-2xl gap-8 justify-between">
+          <div className="bg-card-background flex flex-col p-4 md:p-8 rounded-2xl gap-8 justify-between">
             <img src="/scalpClub/bulb.svg" alt="bulb" className="w-1/2" />
             <span className="text-[36px] leading-[36px] md:text-[36px] text-white">
               Profit Potential? You Bet!
@@ -51,8 +51,8 @@ const Section = () => {
             quality={50}
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 pt-12 pb-10">
-          <div className="bg-card-background flex flex-col p-10 rounded-2xl gap-8 justify-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 pt-12 pb-10">
+          <div className="bg-card-background flex flex-col p-4 md:p-10 rounded-2xl gap-8 justify-start">
             <img src="/scalpClub/US30.svg" alt="US30" className="w-full" />
             <span className="text-[36px] leading-[36px] md:text-[36px] text-white">
               Beyond US30? No-Problem
@@ -62,7 +62,7 @@ const Section = () => {
               markets like Gold (XAU/USD) too
             </p>
           </div>
-          <div className="bg-card-background flex flex-col p-10 rounded-2xl gap-8 justify-start">
+          <div className="bg-card-background flex flex-col p-4 md:p-10 rounded-2xl gap-8 justify-start">
             <img
               src="/scalpClub/bar-chart.svg"
               alt="bar-chart"
@@ -78,7 +78,7 @@ const Section = () => {
             </p>
           </div>
         </div>
-        <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
+        <button className="text-white bg-primary border-none px-12 rounded-xl transition-all ease-in-out w-fit my-8 h-[60px]">
           Start today for free
         </button>
       </div>
