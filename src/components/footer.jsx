@@ -16,8 +16,8 @@ const footer = () => {
   return (
     <>
       {" "}
-      <div className="bg-background px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-8 px-4 border-x-2 border-borderColor md:border-none lg:px-16">
+      <div className="bg-background px-4 md:px-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-40 pb-12 px-4 border-x-2 border-borderColor lg:px-16">
           <div className="gap-4 flex flex-col pt-3">
             <img
               src="/images/logo.png"
@@ -82,6 +82,32 @@ const footer = () => {
             <span className="font-[600] text-[24px]">Email Address</span>
             <p className="text-light-gray">support@bottradex.com</p>
           </div>
+        </div>
+        <div className="lg:px-16 px-4 border-x-2 border-borderColor bg-card-background py-6">
+          <span className="text-light-gray text-[18px] font-[600]">
+            Disclaimer
+          </span>
+          <p className="pt-4 text-white">
+            The BotTradeX algorithmic trading software and associated content
+            are not intended to constitute professional financial, investment,
+            or legal advice. These sophisticated tools are designed to enhance,
+            not replace, your existing brokerage account and should be used at
+            your sole discretion. It is imperative that you conduct thorough
+            independent research and fully understand the nature of the
+            financial instruments you are trading, as well as the associated
+            risks, prior to implementing any BotTradeX algorithm in a live
+            trading environment.
+            <br />
+            <br />
+            BotTradeX algorithms generate trading signals and insights based on
+            generalized market analysis using AI. These signals may not be
+            suitable for your individual financial circumstances or risk
+            tolerance. To obtain personalized financial advice or a
+            comprehensive understanding of relevant financial regulations, we
+            strongly recommend consulting with a qualified financial advisor,
+            your brokerage firm, or a licensed financial services provider
+            before engaging in any trading activities.
+          </p>
         </div>
       </div>
       <div className="bg-primary w-full text-white text-center py-4">
