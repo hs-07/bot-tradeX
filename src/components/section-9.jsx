@@ -2,13 +2,13 @@ import React from "react";
 
 const Section9 = () => {
   return (
-    <div className="px-4 md:px-20 bg-background h-full md:mb-24">
+    <div className="px-4 md:px-20 bg-background h-full ">
       <div className=" min-h-[80vh] md:min-h-screen relative w-full border-x-2 border-borderColor h-full bg-background">
         <div className="absolute bottom-0 md:top-20 right-0">
           <img
             src={"/images/img-4.png"}
             alt="background"
-            className="h-full w-full opacity-[0.8] h-[calc(100dvh-4rem)] object-cover w-screen "
+            className="h-full w-full opacity-[0.8] h-screen object-cover w-screen "
           />
         </div>
         <div className="z-[9] relative flex flex-col md:h-screen justify-center items-center gap-[32px] w-full py-6">

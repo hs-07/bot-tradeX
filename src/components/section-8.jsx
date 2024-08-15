@@ -1,7 +1,6 @@
 import React from "react";
 import Carousel8 from "./carousel8";
 import Carousel9 from "./carousel9";
-import { customers } from "../utils/constants";
 
 const section8 = () => {
   return (
@@ -15,7 +14,6 @@ const section8 = () => {
             Are Saying
           </span>
         </div>
-
         <div className="hidden md:block w-full overflow-x-hidden">
           <Carousel9 />
         </div>
