@@ -61,7 +61,7 @@ const Section7 = () => {
                   ))}
                 </div>
               </div>
-              <button className="bg-primary text-black text-[20px] py-2 rounded-lg mt-4 bg-white mt-32">
+              <button className="text-black text-[20px] py-2 rounded-lg mt-4 bg-white mt-32">
                 {index === 0 ? "14 Day Trial" : "Contact Us"}
               </button>
             </div>

@@ -6,7 +6,7 @@ import {
   Section4,
   Section5,
 } from "../components/ScalpClub";
-import { Navbar, Underline } from "../components";
+import { Footer, Navbar, Underline } from "../components";
 
 const ScalpClub = () => {
   return (
@@ -20,6 +20,8 @@ const ScalpClub = () => {
       <Section4 id="section4" />
       <Underline />
       <Section5 id="section5" />
+      <Underline />
+      <Footer />
     </div>
   );
 };
