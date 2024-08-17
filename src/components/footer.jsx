@@ -87,7 +87,7 @@ const footer = () => {
           <span className="text-light-gray text-[18px] font-[600]">
             Disclaimer
           </span>
-          <p className="pt-4 text-white">
+          <p className="pt-4 text-light-gray">
             The BotTradeX algorithmic trading software and associated content
             are not intended to constitute professional financial, investment,
             or legal advice. These sophisticated tools are designed to enhance,

@@ -26,7 +26,9 @@ const Navbar = () => {
     <div className="w-full bg-background top-0 sticky z-[9999] border-b border-borderColor">
       <nav className="hidden lg:flex w-full h-[4rem] px-20 py-2 items-center justify-between">
         <div className="h-full">
-          <img src="/images/logo.png" alt="remesa" className="h-full py-2" />
+          <Link to={"/"}>
+            <img src="/images/logo.png" alt="remesa" className="h-full py-2" />
+          </Link>
         </div>
         <div className="flex items-center gap-6">
           <ul className="flex justify-end space-x-6">
@@ -71,7 +73,11 @@ const Navbar = () => {
             </>
           </ul>
           <div className="">
-            <Link to="" className="">
+            <Link
+              to="https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+              target="_blank"
+              className=""
+            >
               <button className="text-white bg-primary border-none text-[16px] h-[50px] w-32 rounded-xl transition-all ease-in-out">
                 Contact us
               </button>
@@ -82,7 +88,13 @@ const Navbar = () => {
       <>
         <nav className="flex lg:hidden w-full h-[4rem] md:px-8 px-4 justify-between items-center py-3 bg-background">
           <div className="h-full">
-            <img src="/images/logo.png" alt="remesa" className="h-full py-2" />
+            <Link to={"/"}>
+              <img
+                src="/images/logo.png"
+                alt="remesa"
+                className="h-full py-2"
+              />
+            </Link>
           </div>
           <div className="w-fit" onClick={() => setIsOpen((prev) => !prev)}>
             {isOpen ? (
@@ -117,7 +129,11 @@ const Navbar = () => {
                   {link.title}
                 </NavLink>
               ))}
-              <Link to="" className="">
+              <Link
+                to="https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+                className=""
+                target="_blank"
+              >
                 <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out">
                   Get Started
                 </button>
