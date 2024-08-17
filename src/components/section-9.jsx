@@ -13,11 +13,11 @@ const Section9 = () => {
           />
         </div>
         <div className="z-[9] relative flex flex-col md:h-screen justify-start items-center gap-[20px] w-full md:py-[100px]">
-          <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center px-4 md:px-0">
-            <span className=" md:-mb-10 text-center leading-[36px]">
+          <div className="font-[600] text-[36px] md:text-[80px] text-white flex flex-col w-full items-center px-4 md:px-0">
+            <span className="text-center leading-[36px] md:leading-[80px]">
               Join The future of
             </span>
-            <span className="text-center leading-[36px]">
+            <span className="text-center leading-[36px] md:leading-[80px]">
               {" "}
               Automated Trading
             </span>
