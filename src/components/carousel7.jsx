@@ -48,18 +48,11 @@ const Carousel = () => {
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
-        {/* <button
-          onClick={handlePrev}
-          className="absolute left-0 text-xl p-2 z-10 text-white"
-          aria-label="Previous"
-        >
-          &lt;
-        </button> */}
         <div className="overflow-hidden w-full relative">
           {packages.map((item, index) =>
             index === currentIndex ? (
               <div
-                key={item.id}
+                key={index}
                 className="w-full flex-shrink-0 flex flex-col items-center"
               >
                 <div

@@ -8,7 +8,7 @@ const Section9 = () => {
           <img
             src={"/images/img-4.png"}
             alt="background"
-            className="h-full w-full opacity-[0.8] h-screen object-cover w-screen "
+            className="h-full w-full opacity-[0.8] md:h-screen object-cover w-screen "
           />
         </div>
         <div className="z-[9] relative flex flex-col md:h-screen justify-center items-center gap-[32px] w-full py-6">
