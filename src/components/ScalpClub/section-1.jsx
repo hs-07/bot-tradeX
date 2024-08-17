@@ -12,7 +12,7 @@ const Section1 = () => {
           quality={50}
         />
       </div>
-      <div className="z-[9] relative flex flex-col h-[calc(100dvh-4rem)] justify-center items-center gap-[32px] w-full">
+      <div className="z-[9] relative flex flex-col h-[70vh] md:h-[calc(100dvh-4rem)] justify-center items-center gap-[32px] w-full">
         <span className="text-[#FFFFFF] text-[36px] md:text-[80px] leading-[1] text-center font-[600] px-4">
           Level Up Your Scalping <br />
           Game with

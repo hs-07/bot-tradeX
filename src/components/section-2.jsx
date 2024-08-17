@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Section2 = () => {
   return (
@@ -23,7 +24,7 @@ const Section2 = () => {
 
         <div className="w-full flex items-center flex-col py-20">
           <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center pb-16">
-            <span className="md:-mb-10">Why Choose</span>
+            <span className="-mb-4 md:-mb-10">Why Choose</span>
             <span className=""> BotTradeX?</span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-8 gap-4 md:gap-8">
@@ -40,9 +41,11 @@ const Section2 = () => {
                 Proven rule-based algorithms, Our rule-based algorithms are
                 rigorously backtested to ensure reliable performance over time.
               </p>
-              <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
-                Learn more
-              </button>
+              <Link to={"scalpClub"} className="w-full">
+                <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
+                  Learn more
+                </button>
+              </Link>
             </div>
 
             <div className="bg-card-background flex flex-col p-8 rounded-2xl gap-8 justify-between">
@@ -58,6 +61,7 @@ const Section2 = () => {
                 Stay ahead of the market with real-time alerts and notifications
                 tailored to your trading strategy.
               </p>
+              <Link to={"scalpClub"} className="w-full"></Link>
               <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
                 Learn more
               </button>
@@ -73,9 +77,17 @@ const Section2 = () => {
                   Automate your trades with sophisticated, rule-based systems
                   designed for maximum efficiency.
                 </p>
-                <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
-                  Contact us
-                </button>
+                <Link
+                  to={
+                    "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+                  }
+                  target="_blank"
+                  className="w-full"
+                >
+                  <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
+                    Contact us
+                  </button>
+                </Link>
               </div>
               <div className="w-full md:order-2 order-1">
                 <img
