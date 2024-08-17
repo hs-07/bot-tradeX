@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Section9 = () => {
   return (
     <div className="px-4 md:px-20 bg-background h-full">
-      <div className=" min-h-[70vh] md:min-h-[950px] relative w-full border-x-2 border-borderColor h-full bg-background pb-[100px] pt-12 md:pt-0">
+      <div className=" min-h-[70vh] md:min-h-[950px] relative w-full border-x border-borderColor h-full bg-background pb-[100px] pt-12 md:pt-0">
         <div className="absolute bottom-20 md:bottom-0 md:top-56 right-0">
           <img
             src={"/images/img-4.png"}
@@ -13,8 +13,8 @@ const Section9 = () => {
           />
         </div>
         <div className="z-[9] relative flex flex-col md:h-screen justify-start items-center gap-[20px] w-full md:py-[100px]">
-          <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center">
-            <span className="-mb-2 md:-mb-10 text-center">
+          <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center px-4 md:px-0">
+            <span className=" md:-mb-10 text-center leading-[36px]">
               Join The future of
             </span>
             <span className="text-center leading-[36px]">
@@ -31,7 +31,7 @@ const Section9 = () => {
               "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
             }
             target="_blank"
-            className="w-full flex justify-center"
+            className="w-full flex justify-center mt-6 md:mt-0"
           >
             <button className="text-[#EBEFFF] bg-primary border-none text-[18px] py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
               Get Started for Free
