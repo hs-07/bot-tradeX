@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Section9 = () => {
   return (
     <div className="px-4 md:px-20 bg-background h-full">
-      <div className=" min-h-[70vh] md:min-h-[950px] relative w-full border-x-2 border-borderColor h-full bg-background pb-[100px]">
+      <div className=" min-h-[70vh] md:min-h-[950px] relative w-full border-x-2 border-borderColor h-full bg-background pb-[100px] pt-12 md:pt-0">
         <div className="absolute bottom-20 md:bottom-0 md:top-56 right-0">
           <img
             src={"/images/img-4.png"}
@@ -14,8 +14,13 @@ const Section9 = () => {
         </div>
         <div className="z-[9] relative flex flex-col md:h-screen justify-start items-center gap-[20px] w-full md:py-[100px]">
           <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center">
-            <span className="-mb-4 md:-mb-10">Join The future of</span>
-            <span className=""> Automated Trading</span>
+            <span className="-mb-2 md:-mb-10 text-center">
+              Join The future of
+            </span>
+            <span className="text-center leading-[36px]">
+              {" "}
+              Automated Trading
+            </span>
           </div>
           <span className="text-light-gray md:text-white text-[18px] md:text-[30px] w-full lg:w-3/5 text-center md:leading-[1] px-4">
             Ready to take your trading to the next level? Sign up for BotTradeX

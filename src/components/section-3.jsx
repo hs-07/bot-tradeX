@@ -6,12 +6,15 @@ const Section3 = () => {
     <div className="px-4 md:px-20 " id="services">
       <div className="flex flex-col w-full border-x-2 border-borderColor py-12 md:py-20 items-center">
         <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center md:py-12 ">
-          <span className="md:-mb-10 text-center">
+          <span className="text-center leading-[36px] md:leading-[86px]">
             Comprehensive Services to{" "}
           </span>
-          <span className="text-center"> Elevate Your Trading</span>
+          <span className="text-center  text-center leading-[36px] md:leading-[86px]">
+            {" "}
+            Elevate Your Trading
+          </span>
         </div>
-        <p className="text-[18px] md:text-[30px] text-light-gray leading-[1.2] text-center md:w-1/2 px-4 pb-12 md:pb-20">
+        <p className="text-[18px] md:text-[30px] text-light-gray leading-[1.2] text-center md:w-1/2 px-4 pb-12 pt-12 md:pt-0 md:pb-20">
           Explore our range of services designed to support and enhance your
           trading journey.
         </p>
