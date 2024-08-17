@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Section3 = () => {
   return (
     <div className="px-4 md:px-20 h-full" id="services">
-      <div className="flex flex-col w-full border-x border-borderColor py-12 md:py-[180px] items-center h-full">
+      <div className="flex flex-col w-full border-x border-borderColor pb-12 pt-12 md:pb-[180px] md:pt-[20] items-center h-full">
         <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center md:py-12 ">
           <span className="text-center leading-[36px] md:leading-[86px]">
             Comprehensive Services to{" "}
