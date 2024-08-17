@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import { packages } from "../utils/constants";
 import Carousel7 from "./carousel7";
 
@@ -61,9 +63,17 @@ const Section7 = () => {
                   ))}
                 </div>
               </div>
-              <button className="text-black text-[20px] py-2 rounded-lg mt-4 bg-white mt-32">
-                {index === 0 ? "14 Day Trial" : "Contact Us"}
-              </button>
+              <Link
+                to={
+                  "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+                }
+                target="_blank"
+                className="w-full"
+              >
+                <button className="text-black text-[20px] py-2 w-full rounded-lg mt-4 bg-white mt-32">
+                  {index === 0 ? "14 Day Trial" : "Contact Us"}
+                </button>
+              </Link>
             </div>
           ))}
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Section3 = () => {
   return (
@@ -27,9 +28,19 @@ const Section3 = () => {
                 strategies to optimize your XAU/USD trading.
               </p>
             </div>
-            <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
-              Learn more
-            </button>
+            <Link
+              to={
+                "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+              }
+              target="_blank"
+            >
+              <button
+                className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit"
+                onClick={() => {}}
+              >
+                Learn more
+              </button>
+            </Link>
           </div>
           <div className="text-light-gray w-full flex flex-col items-start gap-6 bg-gradient-to-b from-[#012DC5] to-[#171717] rounded-[20px] p-4 md:p-6 justify-between">
             <div className="flex flex-col gap-6">
@@ -44,9 +55,16 @@ const Section3 = () => {
                 little as one day.
               </p>
             </div>
-            <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
-              Learn more
-            </button>
+            <Link
+              to={
+                "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+              }
+              target="_blank"
+            >
+              <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
+                Learn more
+              </button>
+            </Link>
           </div>
           <div className="text-light-gray w-full flex flex-col items-start gap-6 bg-gradient-to-b from-[#216573] via-[#254451] to-[#191919] rounded-[20px] p-4 md:p-6 justify-between">
             <div className="flex flex-col gap-6">
@@ -61,9 +79,16 @@ const Section3 = () => {
                 returns.
               </p>
             </div>
-            <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
-              Learn more
-            </button>
+            <Link
+              to={
+                "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+              }
+              target="_blank"
+            >
+              <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
+                Learn more
+              </button>
+            </Link>
           </div>
         </div>
       </div>

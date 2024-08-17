@@ -76,7 +76,7 @@ const footer = () => {
             <h1 className="text-[40px] font-[600]">Get in touch</h1>
             <span className="font-[600] text-[24px]">Office Address</span>
             <p className="text-light-gray leading-[1.2]">
-              111 Eagle St, Brisbane City QLD 4000
+              10 Eagle St, Brisbane City. QLD 4000
             </p>
 
             <span className="font-[600] text-[24px]">Email Address</span>
