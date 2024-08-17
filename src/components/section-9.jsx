@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 
 const Section9 = () => {
   return (
-    <div className="px-4 md:px-20 bg-background h-full ">
-      <div className=" min-h-[70vh] md:min-h-screen relative w-full border-x-2 border-borderColor h-full bg-background">
-        <div className="absolute bottom-20 md:top-20 right-0">
+    <div className="px-4 md:px-20 bg-background h-full">
+      <div className=" min-h-[70vh] md:min-h-[950px] relative w-full border-x-2 border-borderColor h-full bg-background pb-[100px]">
+        <div className="absolute bottom-20 md:bottom-0 md:top-56 right-0">
           <img
             src={"/images/img-4.png"}
             alt="background"
             className="h-full w-full opacity-[0.8] md:h-screen object-cover w-screen "
           />
         </div>
-        <div className="z-[9] relative flex flex-col md:h-screen justify-center items-center gap-[32px] w-full py-6">
-          <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center md:pb-16">
+        <div className="z-[9] relative flex flex-col md:h-screen justify-start items-center gap-[20px] w-full md:py-[100px]">
+          <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center">
             <span className="-mb-4 md:-mb-10">Join The future of</span>
             <span className=""> Automated Trading</span>
           </div>
