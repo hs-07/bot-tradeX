@@ -52,7 +52,7 @@ const Carousel = () => {
           {customers.map((item, index) =>
             index === currentIndex ? (
               <div
-                className="bg-card-background rounded-lg p-6 gap-6 flex flex-col justify-between min-w-[25%]"
+                className="bg-card-background rounded-lg p-6 gap-6 flex flex-col justify-between min-w-[25%] h-[320px] md:h-full"
                 key={index}
               >
                 <span className="text-light-gray">{item.description}</span>
@@ -62,7 +62,7 @@ const Carousel = () => {
           )}
         </div>
       </div>
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center mt-12">
         {customers.map((_, index) => (
           <div
             key={index}

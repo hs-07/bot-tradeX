@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import { packages } from "../utils/constants";
+import { Link } from "react-router-dom";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -88,17 +89,28 @@ const Carousel = () => {
                     </span>
 
                     <div className="flex flex-col gap-4">
-                      {item.benefits.map((feature) => (
-                        <p className="text-white text-base leading-[1.2] flex gap-2 items-start">
+                      {item.benefits.map((feature, index) => (
+                        <p
+                          className="text-white text-base leading-[1.2] flex gap-2 items-start"
+                          key={index}
+                        >
                           <img src="/images/tick.svg" alt="tick" className="" />
                           {feature}
                         </p>
                       ))}
                     </div>
                   </div>
-                  <button className="bg-primary text-black text-[20px] py-2 rounded-lg mt-4 bg-white mt-32">
-                    {index === 0 ? "14 Day Trial" : "Upgrade"}
-                  </button>
+                  <Link
+                    to={
+                      "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+                    }
+                    target="_blank"
+                    className="w-full"
+                  >
+                    <button className="bg-primary text-black text-[20px] py-2 rounded-lg mt-4 bg-white mt-32 w-full">
+                      {index === 0 ? "14 Day Trial" : "Upgrade"}
+                    </button>
+                  </Link>
                 </div>
               </div>
             ) : null

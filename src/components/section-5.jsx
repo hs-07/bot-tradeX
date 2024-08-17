@@ -3,7 +3,7 @@ import React from "react";
 const Section5 = () => {
   return (
     <div className="px-4 md:px-20 ">
-      <div className="flex w-full border-x-2 border-borderColor flex-col py-20 px-4 md:px-6">
+      <div className="flex w-full border-x border-borderColor flex-col py-6 md:py-20 px-4 md:px-6">
         <div className="flex md:flex-row flex-col w-full pb-12 gap-6 items-center">
           <div className="w-full md:w-1/2 h-full">
             <img

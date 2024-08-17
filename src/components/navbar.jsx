@@ -86,13 +86,13 @@ const Navbar = () => {
         </div>
       </nav>
       <>
-        <nav className="flex lg:hidden w-full h-[4rem] md:px-8 px-4 justify-between items-center py-3 bg-background">
+        <nav className="flex lg:hidden w-full h-[5rem] md:px-8 px-4 justify-between items-center py-3 bg-background">
           <div className="h-full">
             <Link to={"/"}>
               <img
                 src="/images/logo.png"
                 alt="remesa"
-                className="h-full py-2"
+                className="h-full py-[4px]"
               />
             </Link>
           </div>

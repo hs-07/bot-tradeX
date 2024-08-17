@@ -7,7 +7,7 @@ import Carousel7 from "./carousel7";
 const Section7 = () => {
   return (
     <div className="px-4 md:px-20 overflow-x-hidden" id="packages">
-      <div className="flex flex-col w-full border-x-2 border-borderColor py-20 items-center px-8 overflow-x-auto">
+      <div className="flex flex-col w-full border-x border-borderColor py-20 items-center px-8 overflow-x-auto">
         <div className="pb-6">
           <span className="font-[600] text-[36px] md:text-[86px] text-center text-white flex flex-col w-full items-center leading-[1.2] pb-4">
             BotTradeX EA Packages

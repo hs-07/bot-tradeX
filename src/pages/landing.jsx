@@ -19,6 +19,7 @@ const Landing = () => {
     <div className="bg-background smooth-scroll w-full">
       <Navbar />
       <Section1 id="section1" />
+      <Underline />
       <Section2 id="section2" />
       <Underline />
       <Section3 id="section3" />
