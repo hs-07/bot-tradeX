@@ -22,7 +22,7 @@ const Section9 = () => {
               Automated Trading
             </span>
           </div>
-          <span className="text-light-gray md:text-white text-[18px] md:text-[30px] w-full lg:w-3/5 text-center md:leading-[1] px-4">
+          <span className="text-light-gray md:text-white text-[18px] md:text-[20px] w-full lg:w-3/5 text-center md:leading-[30px] px-4">
             Ready to take your trading to the next level? Sign up for BotTradeX
             today and enjoy the benefit of automated trading
           </span>
