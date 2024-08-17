@@ -1,20 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Section3 = () => {
   return (
     <div className="px-4 md:px-20 " id="services">
-      <div className="flex flex-col w-full border-x-2 border-borderColor py-20 items-center">
-        <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center py-12 ">
+      <div className="flex flex-col w-full border-x-2 border-borderColor py-12 md:py-20 items-center">
+        <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center md:py-12 ">
           <span className="md:-mb-10 text-center">
             Comprehensive Services to{" "}
           </span>
           <span className="text-center"> Elevate Your Trading</span>
         </div>
-        <p className="text-[18px] md:text-[30px] text-light-gray leading-[1.2] text-center md:w-1/2 px-4 pb-20">
+        <p className="text-[18px] md:text-[30px] text-light-gray leading-[1.2] text-center md:w-1/2 px-4 pb-12 md:pb-20">
           Explore our range of services designed to support and enhance your
           trading journey.
         </p>
-        <div className="w-full grid grid-cols-1 lg:grid-cols-3 px-20 lg:h-[50vh] pb-32 lg:pb-0 gap-6">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-3 px-4 md:px-20 lg:h-[50vh] md:pb-32 lg:pb-0 gap-6">
           <div className="text-light-gray w-full flex flex-col items-start gap-6 bg-gradient-to-b from-[#814445] via-[#573A6B] to-[#14263B] rounded-[20px] p-4 md:p-6 justify-between">
             <div className="flex flex-col gap-6">
               <span className="text-start text-[30px] font-[600] text-white">
@@ -27,9 +28,19 @@ const Section3 = () => {
                 strategies to optimize your XAU/USD trading.
               </p>
             </div>
-            <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
-              Learn more
-            </button>
+            <Link
+              to={
+                "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+              }
+              target="_blank"
+            >
+              <button
+                className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit"
+                onClick={() => {}}
+              >
+                Learn more
+              </button>
+            </Link>
           </div>
           <div className="text-light-gray w-full flex flex-col items-start gap-6 bg-gradient-to-b from-[#012DC5] to-[#171717] rounded-[20px] p-4 md:p-6 justify-between">
             <div className="flex flex-col gap-6">
@@ -44,9 +55,16 @@ const Section3 = () => {
                 little as one day.
               </p>
             </div>
-            <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
-              Learn more
-            </button>
+            <Link
+              to={
+                "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+              }
+              target="_blank"
+            >
+              <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
+                Learn more
+              </button>
+            </Link>
           </div>
           <div className="text-light-gray w-full flex flex-col items-start gap-6 bg-gradient-to-b from-[#216573] via-[#254451] to-[#191919] rounded-[20px] p-4 md:p-6 justify-between">
             <div className="flex flex-col gap-6">
@@ -61,9 +79,16 @@ const Section3 = () => {
                 returns.
               </p>
             </div>
-            <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
-              Learn more
-            </button>
+            <Link
+              to={
+                "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+              }
+              target="_blank"
+            >
+              <button className="text-white bg-primary border-none py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
+                Learn more
+              </button>
+            </Link>
           </div>
         </div>
       </div>

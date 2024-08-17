@@ -17,7 +17,7 @@ const footer = () => {
     <>
       {" "}
       <div className="bg-background px-4 md:px-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-40 pb-12 px-4 border-x-2 border-borderColor lg:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 pt-6 md:pt-40 pb-12 px-4 border-x-2 border-borderColor lg:px-16">
           <div className="gap-4 flex flex-col pt-3">
             <img
               src="/images/logo.png"
@@ -76,7 +76,7 @@ const footer = () => {
             <h1 className="text-[40px] font-[600]">Get in touch</h1>
             <span className="font-[600] text-[24px]">Office Address</span>
             <p className="text-light-gray leading-[1.2]">
-              111 Eagle St, Brisbane City QLD 4000
+              10 Eagle St, Brisbane City. QLD 4000
             </p>
 
             <span className="font-[600] text-[24px]">Email Address</span>

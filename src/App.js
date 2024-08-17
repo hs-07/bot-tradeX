@@ -11,7 +11,7 @@ import {
 
 const App = () => {
   return (
-    <div className="w-full bg-white flex justify-center smooth-scroll h-full">
+    <div className="w-full bg-background flex justify-center smooth-scroll h-full">
       <div className="max-w-[1600px] w-full">
         <Routes>
           <Route path="/" element={<LandingPage />} />

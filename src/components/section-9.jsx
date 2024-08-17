@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Section9 = () => {
   return (
@@ -8,7 +9,7 @@ const Section9 = () => {
           <img
             src={"/images/img-4.png"}
             alt="background"
-            className="h-full w-full opacity-[0.8] h-screen object-cover w-screen "
+            className="h-full w-full opacity-[0.8] md:h-screen object-cover w-screen "
           />
         </div>
         <div className="z-[9] relative flex flex-col md:h-screen justify-center items-center gap-[32px] w-full py-6">
@@ -20,9 +21,17 @@ const Section9 = () => {
             Ready to take your trading to the next level? Sign up for BotTradeX
             today and enjoy the benefit of automated trading
           </span>
-          <button className="text-[#EBEFFF] bg-primary border-none text-[18px] py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
-            Get Started for Free
-          </button>
+          <Link
+            to={
+              "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+            }
+            target="_blank"
+            className="w-full flex justify-center"
+          >
+            <button className="text-[#EBEFFF] bg-primary border-none text-[18px] py-3 px-8 rounded-xl transition-all ease-in-out w-fit">
+              Get Started for Free
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         primary: "#012DC5",
         background: "#0D0D0D",
-        borderColor: "#4B4B4B",
+        borderColor: "#292929",
         "light-gray": "#B1B1B1",
         "card-background": "#171717",
       },
