@@ -2,7 +2,7 @@ import React from "react";
 
 const Section1 = () => {
   return (
-    <div className=" min-h-[calc(70dvh-4rem)] md:h-[780px] relative w-full border-t border-borderColor overflow-y-hidden">
+    <div className=" min-h-[calc(72dvh-4rem)] md:h-[780px] relative w-full border-t border-borderColor overflow-y-hidden">
       <div className="absolute top-0 right-0">
         <img
           src={"/images/hero.png"}
@@ -12,7 +12,7 @@ const Section1 = () => {
           quality={50}
         />
       </div>
-      <div className="z-[9] relative flex flex-col h-[calc(72dvh-4rem)]  md:h-full justify-start items-center pt-52 md:pt-28 gap-[32px] w-full">
+      <div className="z-[9] relative flex flex-col h-[580px]  md:h-full justify-start items-center pt-56 md:pt-28 gap-[32px] w-full">
         <span className="text-[#FFFFFF] text-[36px] md:text-[80px] leading-[36px] md:leading-[80px] text-center font-[600] px-4">
           The Future Of Algorithmic Trading Today
         </span>
