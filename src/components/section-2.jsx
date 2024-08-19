@@ -93,12 +93,12 @@ const Section2 = () => {
                 <img
                   src="/images/hero-2.svg"
                   alt="hero"
-                  className="hidden md:flex rounded-tl-[20px] md:rounded-tl-none rounded-tr-[30px] md:rounded-br-[30px] h-full w-full object-cover"
+                  className="hidden md:flex md:rounded-r-[30px] h-full w-full object-cover"
                 />
                 <img
                   src="/images/mob-hero-2.svg"
                   alt="hero"
-                  className="md:hidden flex rounded-tl-[20px] md:rounded-tl-none rounded-tr-[30px] md:rounded-br-[30px] h-full w-full object-cover"
+                  className="md:hidden flex rounded-t-[20px] h-full w-full object-cover"
                 />
               </div>
             </div>
