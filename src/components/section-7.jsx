@@ -71,7 +71,7 @@ const Section7 = () => {
                 className="w-full"
               >
                 <button className="text-black text-[20px] py-2 w-full rounded-lg mt-4 bg-white mt-32">
-                  {index === 0 ? "14 Day Trial" : "Contact Us"}
+                  {"Contact Us"}
                 </button>
               </Link>
             </div>
