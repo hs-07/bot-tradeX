@@ -5,7 +5,7 @@ const section4 = () => {
     <div className="px-4 md:px-20 ">
       <div className="flex md:flex-row flex-col w-full border-x border-borderColor py-12 md:py-20 px-6 gap-6 items-center">
         <div className="w-full md:w-1/2 md:order-1 order-2">
-          <span className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full py-4 md:py-6">
+          <span className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full py-4 md:py-6 leading-[36px] md:leading-[86px]">
             Our Approach
           </span>
 
