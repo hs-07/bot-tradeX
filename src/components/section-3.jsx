@@ -18,7 +18,7 @@ const Section3 = () => {
           Explore our range of services designed to support and enhance your
           trading journey.
         </p>
-        <div className="w-full grid grid-cols-1 lg:grid-cols-3 px-4 md:px-20 lg:h-[50vh] md:pb-32 lg:pb-0 gap-6">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-3 px-4 md:px-20  md:pb-32 lg:pb-0 gap-6">
           <div className="text-light-gray w-full flex flex-col items-start gap-6 bg-gradient-to-b from-[#814445] via-[#573A6B] to-[#14263B] rounded-[20px] p-4 md:p-6 justify-between h-[420px] md:h-full">
             <div className="flex flex-col gap-6">
               <span className="text-start text-[30px] font-[600] text-white">

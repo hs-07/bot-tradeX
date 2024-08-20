@@ -24,8 +24,9 @@ const Section2 = () => {
 
         <div className="w-full flex items-center flex-col py-20">
           <div className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full items-center pb-16">
-            <span className="-mb-4 md:-mb-10">Why Choose</span>
-            <span className=""> BotTradeX?</span>
+            <span className="leading-[36px] md:leading-[86px] text-center">
+              Why Choose <br /> BotTradeX?
+            </span>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 px-4 md:px-8 gap-4 md:gap-8">
             <div className="bg-card-background flex flex-col p-6 md:p-8 rounded-[20px] md:rounded-[30px] gap-8 justify-between">

@@ -13,7 +13,7 @@ const Section5 = () => {
             />
           </div>
           <div className="w-full md:w-1/2">
-            <span className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full pb-6 md:pb-12 leading-[1.2]">
+            <span className="font-[600] text-[36px] md:text-[86px] text-white flex flex-col w-full pb-6 md:pb-12 leading-[36px] md:leading-[86px]">
               Advanced Technology
             </span>
 
