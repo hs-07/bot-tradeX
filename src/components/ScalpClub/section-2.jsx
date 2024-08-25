@@ -6,7 +6,7 @@ const Section = () => {
       <div className="py-4 px-4 md:px-12 md:py-20 border-borderColor border-x">
         <div className="bg-card-background px-4 md:px-12 py-12 rounded-[20px] md:rounded-[30px] w-full flex flex-col items-center">
           <span className="text-[36px] md:text-[80px] leading-[36px] md:leading-[80px] font-[600] text-white text-center w-full">
-            Ready to unlock explosive short-term profits?
+            Ready to capitalize on short-term market opportunities?
           </span>
           <span className="text-light-gray leading-[22px] md:leading-[40px] text-[18px] md:text-[30px] text-center pt-8 md:pt-[40px]">
             Join the BotTradeX Scalp Club and master the art of scalping with

@@ -20,7 +20,7 @@ const footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-12 md:py-20 px-4 border-x-2 border-borderColor lg:px-16">
           <div className="gap-4 flex flex-col pt-3">
             <img
-              src="/images/logo.png"
+              src="/images/logo.svg"
               alt="logo"
               className=""
               width={150}

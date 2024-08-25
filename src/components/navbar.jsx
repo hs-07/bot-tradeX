@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
+  const location = useLocation();
 
   const Navlinks = [
     { title: "Home", path: "/" },
@@ -17,17 +18,32 @@ const Navbar = () => {
     { title: "Home", path: "/" },
     { title: "Scalp Club", path: "/scalpClub" },
     { title: "About us", path: "/about" },
-    { title: "Contact us", path: "/c" },
+    {
+      title: "Contact us",
+      path: "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs",
+    },
     { title: "Privacy Policy", path: "/privacyPolicy" },
     { title: "Terms and conditions", path: "/termsAndConditions" },
   ];
+
+  useEffect(() => {
+    setActiveLink(location.pathname + location.hash);
+  }, [location.pathname, location.hash]);
+
+  useEffect(() => {
+    if (location.pathname === "/scalpClub") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else if (location.pathname === "/") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  }, [location.pathname]);
 
   return (
     <div className="w-full bg-background top-0 sticky z-[9999] border-b border-borderColor">
       <nav className="hidden lg:flex w-full h-[4rem] px-20 py-2 items-center justify-between">
         <div className="h-full">
           <Link to={"/"}>
-            <img src="/images/logo.png" alt="remesa" className="h-full py-2" />
+            <img src="/images/logo.svg" alt="remesa" className="h-full py-2" />
           </Link>
         </div>
         <div className="flex items-center gap-6">
@@ -40,7 +56,6 @@ const Navbar = () => {
                   className={`cursor-pointer font-[400] text-[16px] ${
                     activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
                   }`}
-                  onClick={() => setActiveLink(link.path)}
                 >
                   {link.title}
                 </NavLink>
@@ -57,15 +72,14 @@ const Navbar = () => {
                   {link.title}
                 </a>
               ))}
-
               {Navlinks.slice(4).map((link, index) => (
                 <NavLink
                   key={index}
                   to={link.path}
-                  onClick={() => setActiveLink(link.path)}
                   className={`cursor-pointer font-[400] text-[16px] ${
                     activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
                   }`}
+                  onClick={() => setActiveLink(link.path)}
                 >
                   {link.title}
                 </NavLink>
@@ -90,7 +104,7 @@ const Navbar = () => {
           <div className="h-full">
             <Link to={"/"}>
               <img
-                src="/images/logo.png"
+                src="/images/logo.svg"
                 alt="remesa"
                 className="h-full py-[4px]"
               />

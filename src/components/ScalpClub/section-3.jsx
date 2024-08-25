@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Section = () => {
   return (
@@ -78,9 +79,17 @@ const Section = () => {
             </p>
           </div>
         </div>
-        <button className="text-white bg-primary border-none px-12 rounded-xl transition-all ease-in-out w-fit my-8 h-[60px]">
-          Start today for free
-        </button>
+        <Link
+          to={
+            "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs"
+          }
+          target="_blank"
+          className="w-full flex justify-center"
+        >
+          <button className="text-white bg-primary border-none px-12 rounded-xl transition-all ease-in-out w-fit my-8 h-[60px]">
+            Start today for free
+          </button>
+        </Link>
       </div>
     </div>
   );

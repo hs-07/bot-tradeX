@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "./carousel6";
+import { Link } from "react-router-dom";
 
 const Section = () => {
   const images = [
@@ -31,9 +32,15 @@ const Section = () => {
             <img src={img} alt="" className="" key={index} />
           ))}
         </div>
-        <button className="bg-primary text-white text-[20px] h-[60px] rounded-lg px-12">
-          Join the club now
-        </button>
+        <Link
+          to={"https://buy.stripe.com/4gwcNL7jI7WH4x2cMM"}
+          target="_blank"
+          className="w-full flex justify-center"
+        >
+          <button className="bg-primary text-white text-[20px] h-[60px] rounded-lg px-12">
+            Join the club now
+          </button>
+        </Link>
       </div>
     </div>
   );
