@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Section = () => {
   const points = [
@@ -56,9 +57,15 @@ const Section = () => {
                   Start your free 30 Day Trial
                 </span>
               </div>
-              <button className="bg-primary text-white text-[20px] h-[60px] rounded-lg">
-                Join the club now
-              </button>
+              <Link
+                to={"https://buy.stripe.com/4gwcNL7jI7WH4x2cMM"}
+                target="_blank"
+                className="w-full flex"
+              >
+                <button className="bg-primary text-white text-[20px] h-[60px] rounded-lg w-full">
+                  Join the club now
+                </button>
+              </Link>
             </div>
           </div>
         </div>
