@@ -11,6 +11,7 @@ const Navbar = () => {
     { title: "Services", path: "/#services" },
     { title: "Packages", path: "/#packages" },
     { title: "Results", path: "/#results" },
+    { title: "FAQ", path: "/#faq" },
     { title: "Scalp Club", path: "/scalpClub" },
   ];
 
@@ -22,6 +23,8 @@ const Navbar = () => {
       title: "Contact us",
       path: "https://forms.zohopublic.com.au/BotTradeX/form/ContactUs/formperma/8_vFjmBvnVcHEz6zLFDuOWA_G0nC6pLLErfbfrd5_bs",
     },
+    { title: "Packages", path: "/#packages" },
+    { title: "FAQ", path: "/#faq" },
     { title: "Privacy Policy", path: "/privacyPolicy" },
     { title: "Terms and conditions", path: "/termsAndConditions" },
   ];
@@ -60,7 +63,7 @@ const Navbar = () => {
                   {link.title}
                 </NavLink>
               ))}
-              {Navlinks.slice(1, 4).map((link, index) => (
+              {Navlinks.slice(1, 5).map((link, index) => (
                 <a
                   href={link.path}
                   key={index}
@@ -72,7 +75,7 @@ const Navbar = () => {
                   {link.title}
                 </a>
               ))}
-              {Navlinks.slice(4).map((link, index) => (
+              {Navlinks.slice(5).map((link, index) => (
                 <NavLink
                   key={index}
                   to={link.path}
@@ -128,17 +131,46 @@ const Navbar = () => {
         {isOpen && (
           <div className="w-full h-[100vh] bg-background z-[99] absolute">
             <ul className="flex flex-col justify-start items-center h-full space-y-6 py-12 font-semibold">
-              {mobNavlinks.map((link, index) => (
+              {mobNavlinks.slice(0, 4).map((link, index) => (
                 <NavLink
                   exact
                   to={link.path}
-                  key={index}
-                  className={({ isActive }) =>
-                    `cursor-pointer font-[400] text-[16px] ${
-                      isActive ? "text-white" : "text-[#4F4F4F]"
-                    } `
-                  }
-                  onClick={() => setIsOpen((prev) => !prev)}
+                  className={`cursor-pointer font-[400] text-[16px] ${
+                    activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
+                  }`}
+                  onClick={() => {
+                    setActiveLink(link.path);
+                    setIsOpen((prev) => !prev);
+                  }}
+                >
+                  {link.title}
+                </NavLink>
+              ))}
+              {mobNavlinks.slice(4, 6).map((link, index) => (
+                <a
+                  href={link.path}
+                  className={`cursor-pointer font-[400] text-[16px] ${
+                    activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
+                  }`}
+                  onClick={() => {
+                    setActiveLink(link.path);
+                    setIsOpen((prev) => !prev);
+                  }}
+                >
+                  {link.title}
+                </a>
+              ))}
+              {mobNavlinks.slice(6).map((link, index) => (
+                <NavLink
+                  exact
+                  to={link.path}
+                  className={`cursor-pointer font-[400] text-[16px] ${
+                    activeLink === link.path ? "text-white" : "text-[#4F4F4F]"
+                  }`}
+                  onClick={() => {
+                    setActiveLink(link.path);
+                    setIsOpen((prev) => !prev);
+                  }}
                 >
                   {link.title}
                 </NavLink>
