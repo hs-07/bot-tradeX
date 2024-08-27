@@ -25,7 +25,7 @@ export const packages = [
       "Effortless integrate BotTradeX_EA_V1 into your MT4 trading platform.",
       "Gain hands-on experience with a reliable, pre-optimized strategy",
       "Establish a strong foundation for further exploration and customization",
-      "Achieve 8-10% Monthly returns",
+      "BotTradeX_EA_V1 is engineered to achieve a monthly growth rate of 10%, though actual performance may deviate due to prevailing market conditions.",
     ],
   },
   {
