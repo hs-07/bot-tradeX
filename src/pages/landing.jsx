@@ -11,6 +11,7 @@ import {
   Section7,
   Section8,
   Section9,
+  Faq,
   Footer,
 } from "../components";
 
@@ -32,6 +33,8 @@ const Landing = () => {
       <Section7 id="section7" />
       <Underline />
       <Section8 id="section8" />
+      <Underline />
+      <Faq />
       <Underline />
       <Section9 />
       <div className="w-full flex md:hidden">

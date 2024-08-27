@@ -95,3 +95,43 @@ export const customers = [
       "BotTradeX offers a wide range of EAs to suit different trading styles. I've been using  their momentum algorithms on TradingView, and they have consistently delivered solid  results. I'm impressed with their commitment to innovation and customer success.",
   },
 ];
+export const faqs = [
+  {
+    title: "Can I try the software before purchasing?",
+    content:
+      "Yes, we offer a 14-day trial period to allow you to evaluate the software's functionality and features before making a purchase decision.",
+  },
+  {
+    title: "Is the software compatible with Mac and PC?",
+    content:
+      "BotTradeX_EA_V1 operates primarily as an Expert Advisor (EA) within the MetaTrader 4 (MT4) platform. While designed for Windows, Mac users can access it via a Virtual Private Server (VPS) solution.",
+  },
+  {
+    title: "On how many trading accounts can I use the software?",
+    content:
+      "Each license grants access to one live account and one demo account, facilitating strategy optimization and testing. For additional account requirements, please contact our support team.",
+  },
+  {
+    title: "What type of file will I receive, and how do I install it?",
+    content:
+      "When you make a purchase, you will receive an .ex4 file. This file is in the Expert Advisor format compatible with MT4. Detailed instructions on how to install the file will be provided during your onboarding session and in the accompanying documentation.",
+  },
+  {
+    title: "Do I need prior trading experience to use the software?",
+    content:
+      "Prior trading experience is not mandatory. We offer comprehensive tutorials, videos, and dedicated support to assist users of all levels. However, familiarity with trading concepts can enhance your ability to refine strategies and interpret market dynamics.",
+  },
+  {
+    title: "What is your refund policy?",
+    content:
+      "Due to the digital nature of the product and the 14-day trial period, we maintain a strict no-refund policy, as outlined in our Terms and Conditions. We strongly encourage thorough evaluation during the trial and are committed to providing support to maximize the software's potential. Please note that trading involves inherent risks.",
+  },
+  {
+    title: "Can I share the software with others?",
+    content: `No, sharing the software is strictly prohibited. Each license is tied to a specific MT4 account. If you change your MT4 broker, contact us for license reassignment, which may incur fees. Unauthorized sharing violates intellectual property laws and is subject to legal action. ${(
+      <br />
+    )} ${(
+      <br />
+    )} If you have additional questions or require further assistance, please don't hesitate to reach out to our support team. Support@bottradex.com`,
+  },
+];

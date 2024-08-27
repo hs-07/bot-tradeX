@@ -10,3 +10,4 @@ export { default as Section7 } from "./section-7";
 export { default as Section8 } from "./section-8";
 export { default as Section9 } from "./section-9";
 export { default as Footer } from "./footer";
+export { default as Faq } from "./faq";
