@@ -6,7 +6,7 @@ const Section6 = () => {
       <div className="border-x border-borderColor pt-10 pb-32 md:pb-60 md:pb-0 md:pt-20 relative h-[40dvh] md:min-h-screen z-[9] px-6 md:px-8">
         <div className="absolute top-20 right-0 -z-[1]">
           <img
-            src={"/images/img-2.png"}
+            src={"/images/img-2.jpg"}
             alt="background"
             className="h-full w-full object-cover w-screen md:flex hidden"
           />
@@ -39,7 +39,7 @@ const Section6 = () => {
         </div>
         <div className="absolute top-20 right-0 left-0 w-full -z-[1]">
           <img
-            src={"/images/img-3.png"}
+            src={"/images/img-3.jpg"}
             alt="background"
             className="h-full w-full object-cover w-screen"
           />
